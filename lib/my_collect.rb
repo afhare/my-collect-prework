@@ -1,13 +1,16 @@
 def my_collect (array)
   i=0 
+  new_array = []
   if (array[0].includes?(" ")) do
     while i<array.length
-    yield array[i].split(" ").first 
+    yield new_array << array[i].split(" ").first
+    i+=1
   end
   
-  if 
-  while
-  yield
+  else
+    while i<array.length
+    yield new_array << array[i].upcase
+    
   end
   array
 end
