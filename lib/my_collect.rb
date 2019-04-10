@@ -1,7 +1,7 @@
 def my_collect (array)
   i=0 
   new_array = []
-  if (array[0].includes?(" ")) do
+  if (array[0].includes?(" "))
     while i<array.length
     yield new_array << array[i].split(" ").first
     i+=1
